@@ -238,7 +238,7 @@ h1 span {
     .sobre-mi-container {
         flex-direction: column-reverse; /* Foto arriba, texto abajo */
         text-align: center;
-        padding: 2rem;
+        padding: 1.5rem;
         gap: 2rem;
     }
 
@@ -664,5 +664,66 @@ footer p {
 
     .cs-hero h1 {
         font-size: 2.5rem;
+    }
+}
+
+/* AJUSTES DISPOSITIVOS MÓVILES V2 */
+
+@media (max-width: 768px) {
+
+    /* Menú de navegación */
+    nav {
+        flex-direction: column; /* Pone el logo arriba y los enlaces abajo */
+        padding: 1rem;
+        gap: 15px; /* Espacio entre el logo y los enlaces */
+    }
+
+    nav ul {
+        gap: 15px; /* Espacio entre los propios enlaces */
+        justify-content: center;
+        flex-wrap: wrap; /* Si no caben, bajan de línea */
+    }
+
+    /* Títulos y texto */
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .cabecera p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Espaciado */
+    section {
+        padding: 3rem 1.5rem; /* Menos relleno a los lados */
+    }
+
+    /* Sección sobre mí */
+    .sobre-mi-img img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .sobre-mi-text p {
+        text-align: left;
+    }
+
+    /* Botones footer */
+    .footer-actions {
+        gap: 8px;
+        margin: 15px 0;
+    }
+
+    .footer-actions .btn-primary, 
+    .footer-actions .btn-secondary {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        width: auto;
+        display: inline-flex;
     }
 }
