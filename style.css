@@ -644,30 +644,44 @@ footer p {
     color: #64748b;
 }
 
-/* Responsive */
+/* AJUSTES DISPOSITIVOS MÓVILES - CASOS DE ESTUDIO */
 @media (max-width: 968px) {
+    /* Reducir el título */
+    .cs-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .cs-lead {
+        font-size: 1rem;
+    }
+
+    /* Poner texto y vídeo uno debajo de otro */
     .feature-row, .feature-row.reverse {
         flex-direction: column;
-        text-align: center;
         gap: 40px;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 
-    .step-badge {
-        left: 50%;
-        transform: translateX(-50%);
+    .feature-text {
+        min-width: 0; /* Esto arregla el desbordamiento lateral */
+        width: 100%;
     }
 
-    .check-list li {
-        justify-content: center;
+    /* Ajustar márgenes para ganar espacio */
+    .cs-main-container {
+        padding: 0 20px;
+    }
+    
+    .cs-hero {
+        padding-top: 100px; /* Para que no lo tape el menú */
     }
 
-    .cs-hero h1 {
-        font-size: 2.5rem;
+    .cs-footer p{
+        font-size: 1rem;
     }
 }
 
-/* AJUSTES DISPOSITIVOS MÓVILES V2 */
+/* AJUSTES DISPOSITIVOS MÓVILES PÁGINA PRINCIPAL V2 */
 
 @media (max-width: 768px) {
 
@@ -686,7 +700,7 @@ footer p {
 
     /* Títulos y texto */
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .cabecera p {
