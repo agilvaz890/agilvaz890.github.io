@@ -222,3 +222,95 @@ footer p{
     text-align: center;
     color: white;
 }
+
+/* AJUSTES DISPOSITIVOS MÓVILES */
+@media (max-width: 768px) {
+
+    /* Cabecera (Título/logo y menú) */
+    header {
+        flex-direction: column; /* Pone "LAS VIÑAS" arriba y el menú abajo */
+        align-items: center;
+        padding: 20px;
+    }
+
+    header h4 {
+        margin-bottom: 15px; /* Espacio entre el logo y el menú */
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav li {
+        margin: 0; /* Quitamos el margen lateral antiguo */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Letra un poco más pequeña */
+    }
+
+    /* Reducimos el tamaño del título */
+    #principal h1 {
+        font-size: 2.5rem;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* Secciones (Titulares e Historia) */
+    #titulares, #historia h2, #historia .contenedor_texto_historia, #galeria {
+        padding: 40px 20px; /* Menos relleno vertical */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Títulos de sección más pequeños */
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    /* Sección Titulares - Ponemos texto arriba, imagen debajo */
+    .titular {
+        display: flex;
+        flex-direction: column; /* Pone uno debajo de otro */
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    /* Forzamos el orden visual sin tocar el HTML */
+    .titular .texto {
+        order: 1; /* El texto siempre va PRIMERO */
+    }
+
+    .titular .imagen {
+        order: 2; /* La imagen siempre va SEGUNDA */
+        margin-top: 10px;
+    }
+    
+    .titular .imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    /* Capitular más pequeña */
+    .titular .texto p:first-of-type::first-letter {
+        font-size: 3rem;
+    }
+
+    /* Imágenes sección Historia */
+    .img_completa {
+        height: 30vh; /* Menos altura en móvil para que no ocupen toda la pantalla */
+    }
+}
