@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álvaro Gil | Desarrollador Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--Imagen pequeña que aparece en la pestaña del navegador-->
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<script src="script.js"></script>
+<body>
+
+    <nav>
+        <div class="logo">Álvaro Gil</div>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contactar</a></li>
+        </ul>
+    </nav>
+
+    <header class="cabecera">
+        <div class="cabecera-contenido">
+            <h1>Desarrollador Web <br> en formación <span class="text-gradient">(DAW)</span></h1>
+            <p class="typewriter">Me especializo en <span id="typing-text"></span><span class="cursor">|</span></p>
+            <div class="cabecera-btns">
+                <a href="#proyectos" class="btn-primary">Ver mis trabajos</a>
+                <a href="https://github.com/agilvaz890" target="_blank" class="btn-secondary">Mi GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mi">
+        <div class="sobre-mi-container">
+            <div class="sobre-mi-text">
+                <h2>Sobre mí</h2>
+                <p>Soy Álvaro, estudiante de <strong>Desarrollo de Aplicaciones Web (DAW)</strong> en el IES Martínez Montañés (Sevilla). 
+                <br><br>
+                Compagino mis estudios con el desarrollo de <strong>proyectos reales</strong>, lo que me ha permitido enfrentarme a plazos de entrega,
+                gestión de clientes y resolución de problemas técnicos en entornos de producción.
+                <br><br>
+                Para mí, el desarrollo web es la capacidad de <strong>dar vida a ideas</strong>. Disfruto igual maquetando una interfaz desde cero
+                que configurando una tienda online, buscando siempre que el resultado final sea útil, esté bien hecho y funcione como debe.</p>
+
+                <div class="soft-skills">
+                    <span class="skill-pill">HTML5</span>
+                    <span class="skill-pill">CSS3</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">SQL</span>
+                    <span class="skill-pill">🗣️ Experiencia en trato con el cliente</span>
+                    <span class="skill-pill">🤝 Trabajo en equipo</span>
+                    <span class="skill-pill">🧠 Autodidacta</span>
+                    <span class="skill-pill">🛠️ Resolutivo</span>
+                    <span class="skill-pill">📚 Cambridge B1</span>
+                </div>
+            </div>
+            
+            <div class="sobre-mi-img">
+                <img src="img/foto-perfil.JPG" alt="Álvaro Gil">
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    
+    <div class="grid-proyectos">
+        
+        <article class="card">
+            <div class="card-img">
+                <img src="img/portada-chico-jorge.png" alt="Portada Joyería Chico Jorge"> 
+            </div>
+            <div class="card-info">
+                <h3>Joyería Chico Jorge</h3>
+                
+                <div class="tags-container">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">WooCommerce</span>
+                    <span class="tag">Pasarela de pago</span>
+                </div>
+
+                <p>E-commerce completo con pasarela de pago, catálogo de productos, búsqueda y filtrado, y gestión de inventario para una joyería local. Proyecto recuperado y documentado.</p>
+                <a href="proyecto-joyeria.html" class="btn-link">Ver Más →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-img">
+                <img src="img/portada-jaraiz.png" alt="Portada Autoescuela Jaraiz"> 
+            </div>
+            <div class="card-info">
+                <h3>Autoescuela Jaraiz</h3>
+                
+                <div class="tags-container">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">WooCommerce</span>
+                    <span class="tag">Pasarela de pago</span>
+                    <span class="tag">En funcionamiento</span>
+                </div>
+
+                <p>Desarrollo de web corporativa y tienda online. Optimización SEO local y sistema de E-commerce que automatiza tanto la venta de servicios como la administración y seguimiento de los pedidos realizados.</p>
+                <a href="https://autoescuelajaraiz.es/" target="_blank" class="btn-link">Visitar Web →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-img">
+                <img src="img/portada-camino-santigo-delux.png" alt="Portada Camino Santiago Delux"> 
+            </div>
+            <div class="card-info">
+                <h3>Camino Santiago Delux</h3>
+                
+                <div class="tags-container">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">Reservas</span>
+                    <span class="tag">Control de acceso</span>
+                </div>
+
+                <p>Plataforma para mayorista de viajes. Desarrollo de Área Privada (Login) con control de acceso para agencias.
+                    La herramienta permite a los colaboradores consultar itinerarios, disponibilidad, gestionar sus propias reservas y acceder a precios netos y comisiones.
+                </p>
+                <a href="proyecto-camino-santiago-delux.html" class="btn-link">Ver Más →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-img">
+                <img src="img/portada-exaltacion.png" alt="Portada Hermandad de la Exaltación Jerez"> 
+            </div>
+            <div class="card-info">
+                <h3>Hermandad Exaltación Jerez</h3>
+                
+                <div class="tags-container">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                </div>
+
+                <p>Propuesta de diseño para la página web de la hermandad jerezana. Capta la esencia de la corporación, manteniendo una estética formal y elegante, pero a su vez atractiva y actualizada. Realizada usando exclusivamente HTML y CSS.</p>
+                <a href="web-exaltacion/index.html" target="_blank" class="btn-link">Ver Propuesta →</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+    <footer id="contacto">
+    <h2>¿Hablamos?</h2>
+    <p>Busco oportunidades para prácticas o empleos.</p>
+    
+    <div class="footer-actions">
+        <a href="mailto:lalogv2005@gmail.com" class="btn-primary">
+            Envíame un correo
+        </a>
+
+        <a href="https://www.linkedin.com/in/alvarogilvazquez/" target="_blank" class="btn-secondary linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="doc/CV-AlvaroGilVazquez.pdf" target="_blank" class="btn-secondary cv">
+            <i class="fas fa-file-pdf"></i> Ver CV
+        </a>
+    </div>
+
+    <p class="copyright">© <span id="year"></span> Álvaro Gil - Desarrollado desde cero.</p>
+</footer>
+
+</body>
+</html>
